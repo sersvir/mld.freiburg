@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | Mobile Lymphdrainage Freiburg</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Embed Custom Styles for guaranteed color display and consistency -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        :root {
+            --color-background: #F4F1E9; /* Slightly less saturated cream */
+            --color-text: #5C4D40;       /* Deep, rich brown for headings and main text */
+            --color-accent: #A89078;     /* Lighter, warmer brown for accents and links */
+            --color-white: #ffffff;
+            --color-shadow: rgba(92, 77, 64, 0.1); /* Brown tint for shadows */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            padding-top: 5rem; /* Space for sticky header */
+        }
+        
+        /* Custom Header Styling and shadow */
+        .main-header {
+            box-shadow: 0 4px 8px var(--color-shadow);
+            border-bottom: 1px solid var(--color-accent);
+            background-color: var(--color-background); /* Ensure header uses background color */
+        }
+
+        .contact-cta span {
+            font-size: 1.125rem; /* lg:text-xl */
+            font-weight: 700;
+            color: var(--color-text); /* Use the main text color for prominence */
+        }
+
+        /* Navigation Link Styling */
+        .nav-link {
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s, color 0.2s;
+            color: var(--color-text);
+        }
+        .nav-link.active {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            font-weight: 600;
+        }
+        .nav-link:not(.active):hover {
+            color: var(--color-text);
+            background-color: rgba(168, 144, 120, 0.1);
+        }
+
+        /* Specific fix for gray text in content sections */
+        .text-gray-700 {
+            color: var(--color-text);
+            opacity: 0.85; /* Slightly lighter body text for readability */
+        }
+    </style>
+    <!-- END OF EMBEDDED STYLES -->
+</head>
+<body class="min-h-screen">
+
+    <!-- STICKY HEADER AND NAVIGATION -->
+    <header class="main-header fixed top-0 left-0 w-full z-50 px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+        <!-- Logo/Brand -->
+        <div class="text-xl font-bold text-[var(--color-text)] mb-2 md:mb-0">
+            Mobile Lymphdrainage Freiburg
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex space-x-2 md:space-x-4 mb-2 md:mb-0 text-sm md:text-base">
+            <a href="index.html" class="nav-link">Hauptseite</a>
+            <a href="ueber_uns.html" class="nav-link">Über uns</a>
+            <a href="einsatzgebiet.html" class="nav-link">Einsatzgebiet</a>
+            <a href="#" class="nav-link active">Impressum</a>
+        </nav>
+
+        <!-- Prominent Contact CTA (Non-clickable) -->
+        <div class="contact-cta text-sm md:text-base text-[var(--color-text)] font-semibold whitespace-nowrap">
+            Termin vereinbaren: <span>0152 13 60 13 87</span>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        
+        <!-- HEADER / TITLE SECTION -->
+        <section class="text-center py-16 md:py-24 rounded-xl bg-white shadow-xl my-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-[var(--color-text)]">
+                Impressum
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-[var(--color-text)] max-w-4xl mx-auto">
+                Gesetzlich vorgeschriebene Anbieterkennzeichnung
+            </p>
+        </section>
+
+        <!-- LEGAL INFORMATION -->
+        <section class="py-12 bg-white rounded-xl shadow-xl p-8 md:p-12 mt-8 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-[var(--color-text)] border-b-2 border-[var(--color-accent)] pb-2">Angaben gemäß § 5 TMG</h2>
+            
+            <div class="space-y-4 text-lg text-gray-700">
+                <p>
+                    **Verantwortlich für die Inhalte:**
+                    <br>
+                    Demsas Yigzaw
+                    <br>
+                    Staatlich geprüfter Physiotherapeut, Zertifizierter Lymphtherapeut
+                </p>
+
+                <p>
+                    **Kontakt:**
+                    <br>
+                    Telefon: **0152 13 60 13 87**
+                    <br>
+                    E-Mail: <a href="mailto:DEMSAS.YIGZAW@WEB.DE" class="text-[var(--color-text)] hover:text-[var(--color-accent)] underline">DEMSAS.YIGZAW@WEB.DE</a>
+                </p>
+                
+                <h3 class="text-2xl font-bold mt-8 text-[var(--color-text)]">Berufsrechtliche Angaben</h3>
+                <p>
+                    **Berufsbezeichnung:** Physiotherapeut (verliehen in Deutschland)
+                    <br>
+                    **Zuständige Aufsichtsbehörde:** [Bitte die zuständige Gesundheitsbehörde/Finanzamt eintragen]
+                </p>
+                
+                <h3 class="text-2xl font-bold mt-8 text-[var(--color-text)]">Berufshaftpflichtversicherung</h3>
+                <p>
+                    Eine Berufshaftpflichtversicherung ist vorhanden.
+                </p>
+                
+                <h3 class="text-2xl font-bold mt-8 text-[var(--color-text)]">Streitschlichtung</h3>
+                <p>
+                    Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-6 border-t border-[var(--color-accent)] mt-12 bg-white/70">
+        <p class="text-sm text-[var(--color-text)]">
+            &copy; 2025 Mobile Lymphdrainage Freiburg | 
+            <a href="index.html" class="hover:text-[var(--color-accent)] transition">Hauptseite</a> |
+            <a href="datenschutz.html" class="hover:text-[var(--color-accent)] transition">Datenschutz</a>
+        </p>
+    </footer>
+
+</body>
+</html>
