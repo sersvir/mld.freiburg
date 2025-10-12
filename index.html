@@ -75,7 +75,7 @@
 
         <!-- Navigation -->
         <nav class="flex space-x-2 md:space-x-4 mb-2 md:mb-0 text-sm md:text-base">
-            <a href="#" class="nav-link active">Hauptseite</a>
+            <a href="index.html" class="nav-link active">Hauptseite</a>
             <a href="ueber_uns.html" class="nav-link">Über uns</a>
             <a href="einsatzgebiet.html" class="nav-link">Einsatzgebiet</a>
             <a href="impressum.html" class="nav-link">Impressum</a>
@@ -89,47 +89,50 @@
 
     <main class="container mx-auto px-4 py-8">
         
-        <!-- 1. HERO SECTION -->
-        <section class="text-center py-16 md:py-24 rounded-xl bg-white shadow-xl my-8">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-[var(--color-text)]">
-                Ihr Spezialist für Manuelle Lymphdrainage – Bequem bei Ihnen zu Hause.
-            </h1>
-            <p class="text-xl md:text-2xl font-light text-[var(--color-text)] max-w-4xl mx-auto">
+        <!-- 1. HERO SECTION (Logo and Main Heading Integrated) -->
+        <section class="hero-section text-center py-16 md:py-24 rounded-xl bg-white shadow-xl my-8">
+            <div class="flex flex-col md:flex-row items-center justify-center max-w-5xl mx-auto mb-6">
+                
+                <!-- Logo Image - STYLING REMOVED FOR CLEAN INSERTION -->
+                <!-- Assuming mld.freiburg.jpg is in the same directory for GitHub Pages demo -->
+                <img src="mld.freiburg.png" 
+                     alt="Mobile Lymphdrainage Freiburg Logo" 
+                     class="h-32 w-32 md:h-40 md:w-40 object-contain mr-0 md:mr-6 mb-4 md:mb-0">
+                
+                <!-- Headline -->
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-[var(--color-text)]">
+                    Ihr Spezialist für Manuelle Lymphdrainage – Bequem bei Ihnen zu Hause.
+                </h1>
+            </div>
+            
+            <!-- Subtitle and Phone Number -->
+            <p class="text-xl md:text-2xl font-light text-[var(--color-text)] max-w-4xl mx-auto mb-4">
                 Hochwertige und flexible Physiotherapie für Menschen mit eingeschränkter Mobilität in Freiburg und Umgebung.
             </p>
-            
-            <!-- NEW: Prominently displayed phone number -->
-            <div class="mt-8 text-2xl md:text-3xl font-extrabold text-[var(--color-text)]">
-                Rufen Sie uns an: 0152 13 60 13 87
+            <div class="text-center">
+                <span class="text-2xl md:text-3xl font-bold text-[var(--color-text)]">0152 13 60 13 87</span>
             </div>
         </section>
 
         <!-- 2. CORE COMPETENCE SECTION -->
-        <section class="core-competence-section text-center py-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[var(--color-text)]">Ein Service, der einen echten Unterschied macht.</h2>
-            <p class="text-lg text-gray-700 max-w-4xl mx-auto">
-                Die Nachfrage nach spezialisierter **Manueller Lymphdrainage (MLD)** wächst stetig, doch für viele Patienten – insbesondere ältere Menschen oder Personen mit eingeschränkter Mobilität – sind Fahrten zur Praxis eine Belastung. Unser mobiles Angebot löst dieses Problem: Sie erhalten die spezialisierte Therapie, die Sie dauerhaft benötigen, in der vertrauten und bequemen Umgebung Ihres Zuhauses. Dadurch ermöglichen wir Ihnen eine effektive Behandlung, die Ihre Lebensqualität nachhaltig verbessert.
-            </p>
+        <section class="core-competence-section text-center py-8">
+            <h2 class="text-3xl font-bold mb-4 text-[var(--color-text)]">Ein Service, der einen echten Unterschied macht.</h2>
+            <p class="text-lg text-gray-700 max-w-4xl mx-auto">Die Nachfrage nach spezialisierter **Manueller Lymphdrainage (MLD)** wächst stetig, doch für viele Patienten – insbesondere ältere Menschen oder Personen mit eingeschränkter Mobilität – sind Fahrten zur Praxis eine Belastung. Unser mobiles Angebot löst dieses Problem: Sie erhalten die spezialisierte Therapie, die Sie dauerhaft benötigen, in der vertrauten und bequemen Umgebung Ihres Zuhauses. Dadurch ermöglichen wir Ihnen eine effektive Behandlung, die Ihre Lebensqualität nachhaltig verbessert.</p>
         </section>
 
         <!-- 3. KEY BENEFITS SECTION -->
-        <section class="py-12 flex flex-col md:flex-row justify-between gap-6">
-            <!-- Benefit Card 1 -->
-            <div class="flex-1 p-6 rounded-xl border border-[var(--color-accent)] shadow-lg bg-white text-center">
-                <h3 class="text-2xl font-bold mb-3 text-[var(--color-text)]">Spezialisierung</h3>
-                <p class="text-gray-700">Fokus auf Manuelle Lymphdrainage. Zertifizierte Fachkompetenz für chronische Lymphprobleme.</p>
+        <section class="key-benefits-section flex flex-col md:flex-row justify-around gap-6 text-center py-8 border-t border-dashed border-[var(--color-accent)]">
+            <div class="flex-1 p-6 rounded-xl bg-white shadow-lg border border-[var(--color-accent)]/20">
+                <h3 class="text-xl font-bold mb-2 text-[var(--color-text)]">Spezialisierung</h3>
+                <p class="text-base text-gray-700">Fokus auf Manuelle Lymphdrainage. Zertifizierte Fachkompetenz für chronische Lymphprobleme.</p>
             </div>
-            
-            <!-- Benefit Card 2 -->
-            <div class="flex-1 p-6 rounded-xl border border-[var(--color-accent)] shadow-lg bg-white text-center">
-                <h3 class="text-2xl font-bold mb-3 text-[var(--color-text)]">Komfort</h3>
-                <p class="text-gray-700">Keine anstrengenden Anfahrtswege. Wir bringen die Behandlung direkt zu Ihnen nach Hause.</p>
+            <div class="flex-1 p-6 rounded-xl bg-white shadow-lg border border-[var(--color-accent)]/20">
+                <h3 class="text-xl font-bold mb-2 text-[var(--color-text)]">Komfort</h3>
+                <p class="text-base text-gray-700">Keine anstrengenden Anfahrtswege. Wir bringen die Behandlung direkt zu Ihnen nach Hause.</p>
             </div>
-
-            <!-- Benefit Card 3 -->
-            <div class="flex-1 p-6 rounded-xl border border-[var(--color-accent)] shadow-lg bg-white text-center">
-                <h3 class="text-2xl font-bold mb-3 text-[var(--color-text)]">Zeitersparnis & Flexibilität</h3>
-                <p class="text-gray-700">Flexible Terminplanung, abgestimmt auf Ihre individuellen Bedürfnisse.</p>
+            <div class="flex-1 p-6 rounded-xl bg-white shadow-lg border border-[var(--color-accent)]/20">
+                <h3 class="text-xl font-bold mb-2 text-[var(--color-text)]">Zeitersparnis & Flexibilität</h3>
+                <p class="text-base text-gray-700">Flexible Terminplanung, abgestimmt auf Ihre individuellen Bedürfnisse.</p>
             </div>
         </section>
 
@@ -146,3 +149,5 @@
 
 </body>
 </html>
+
+
