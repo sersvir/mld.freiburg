@@ -1,0 +1,163 @@
+:root {
+    --color-background: #F7F4EC; /* Soft Cream/Beige */
+    --color-text: #8D7666;       /* Warm Taupe/Brown */
+    --color-accent: #6B5340;     /* Darker Brown for Buttons */
+    --color-white: #ffffff;
+}
+
+/* BASE STYLES */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 80px; /* Space for fixed header */
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+h1, h2, h3 {
+    color: var(--color-accent);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER AND NAVIGATION */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-background);
+    border-bottom: 2px solid var(--color-text);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--color-accent);
+}
+
+.main-nav a {
+    margin-left: 20px;
+    font-size: 1em;
+    padding: 5px 0;
+}
+.main-nav a.active {
+    border-bottom: 3px solid var(--color-accent);
+}
+
+.contact-cta {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--color-text);
+}
+.contact-cta span {
+    color: var(--color-accent);
+    margin-left: 5px;
+}
+
+
+/* MAIN SECTIONS */
+section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background-color: var(--color-background);
+    text-align: center;
+    padding: 100px 5% 80px;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: var(--color-text);
+    text-decoration: none;
+}
+
+/* KEY BENEFITS SECTION */
+.key-benefits-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    text-align: center;
+    padding: 80px 5%;
+    border-top: 1px dashed var(--color-text);
+}
+
+.benefit-card {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(141, 118, 102, 0.05); /* Very light wash of text color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-card h3 {
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--color-text);
+    background-color: var(--color-background);
+    font-size: 0.9em;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .main-nav {
+        margin: 10px 0;
+    }
+    .contact-cta {
+        margin-top: 5px;
+        font-size: 1em;
+    }
+    .hero-section h1 {
+        font-size: 2em;
+    }
+    .key-benefits-section {
+        flex-direction: column;
+    }
+}
