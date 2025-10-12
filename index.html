@@ -4,56 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Lymphdrainage Freiburg – Spezialisierte Physiotherapie</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Using Inter for better readability, a key factor for the target demographic -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
+<body class="min-h-screen">
 
-    <header class="main-header">
-        <div class="logo">Mobile Lymphdrainage Freiburg</div>
-        <nav class="main-nav">
-            <a href="#hauptseite" class="active">Hauptseite</a>
-            <a href="ueber_uns.html">Über uns</a>
-            <a href="einsatzgebiet.html">Einsatzgebiet</a>
-            <a href="impressum.html">Impressum</a>
+    <!-- STICKY HEADER AND NAVIGATION (Phone number always visible) -->
+    <!-- Increased horizontal padding (px-6) to fix the phone number cutoff issue -->
+    <header class="main-header fixed top-0 left-0 w-full bg-[var(--color-background)] z-50 px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+        <!-- Logo/Brand -->
+        <div class="text-xl font-bold text-[var(--color-accent)] mb-2 md:mb-0">
+            Mobile Lymphdrainage Freiburg
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex space-x-4 mb-2 md:mb-0 text-sm md:text-base">
+            <a href="#" class="font-bold border-b-2 border-[var(--color-accent)] text-[var(--color-accent)]">Hauptseite</a>
+            <a href="#ueber-uns" class="hover:text-[var(--color-accent)] transition">Über uns</a>
+            <a href="#einsatzgebiet" class="hover:text-[var(--color-accent)] transition">Einsatzgebiet</a>
+            <a href="#impressum" class="hover:text-[var(--color-accent)] transition">Impressum</a>
         </nav>
-        <div class="contact-cta">
-            Termin vereinbaren: <span>0152 13 60 13 87</span>
+
+        <!-- Prominent Contact CTA - Now guaranteed to fit -->
+        <div class="contact-cta text-sm md:text-base text-[var(--color-text)] font-semibold">
+            Termin vereinbaren: <span class="text-[var(--color-accent)]">0152 13 60 13 87</span>
         </div>
     </header>
 
-    <main>
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1>Ihr Spezialist für Manuelle Lymphdrainage – Bequem bei Ihnen zu Hause.</h1>
-                <p>Hochwertige und flexible Physiotherapie für Menschen mit eingeschränkter Mobilität in Freiburg und Umgebung.</p>
-                <a href="tel:015213601387" class="cta-button">Jetzt Termin vereinbaren (0152 13 60 13 87)</a>
+    <main class="container mx-auto px-4">
+        
+        <!-- 1. HERO SECTION -->
+        <section class="hero-section text-center py-20 md:py-32 rounded-xl bg-white shadow-lg my-8" id="hauptseite">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-[var(--color-accent)]">
+                    Ihr Spezialist für Manuelle Lymphdrainage – Bequem bei Ihnen zu Hause.
+                </h1>
+                <!-- Removed the CTA button as requested -->
+                <p class="text-xl md:text-2xl mb-8 font-light text-[var(--color-text)]">
+                    Hochwertige und flexible Physiotherapie für Menschen mit eingeschränkter Mobilität in Freiburg und Umgebung.
+                </p>
+                
+                <!-- Added a strong text callout instead of a button -->
+                <p class="text-2xl md:text-3xl font-bold mt-10 text-[var(--color-accent)]">
+                    Rufen Sie uns an: <a href="tel:015213601387" class="underline hover:no-underline">0152 13 60 13 87</a>
+                </p>
+
             </div>
         </section>
 
-        <section class="core-competence-section">
-            <h2>Ein Service, der einen echten Unterschied macht.</h2>
-            <p>Die Nachfrage nach spezialisierter **Manueller Lymphdrainage (MLD)** wächst stetig, doch für viele Patienten – insbesondere ältere Menschen oder Personen mit eingeschränkter Mobilität – sind Fahrten zur Praxis eine Belastung. Unser mobiles Angebot löst dieses Problem: Sie erhalten die spezialisierte Therapie, die Sie dauerhaft benötigen, in der vertrauten und bequemen Umgebung Ihres Zuhauses. Dadurch ermöglichen wir Ihnen eine effektive Behandlung, die Ihre Lebensqualität nachhaltig verbessert.</p>
+        <!-- 2. CORE COMPETENCE SECTION -->
+        <section class="core-competence-section py-12 text-center" id="service">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-[var(--color-accent)]">Ein Service, der einen echten Unterschied macht.</h2>
+            <p class="max-w-3xl mx-auto text-lg leading-relaxed">
+                Die Nachfrage nach spezialisierter **Manueller Lymphdrainage (MLD)** wächst stetig, doch für viele Patienten – insbesondere ältere Menschen oder Personen mit eingeschränkter Mobilität – sind Fahrten zur Praxis eine Belastung.
+                <br><br>
+                Unser mobiles Angebot löst dieses Problem: Sie erhalten die spezialisierte Therapie, die Sie dauerhaft benötigen, in der vertrauten und bequemen Umgebung Ihres Zuhauses. Dadurch ermöglichen wir Ihnen eine effektive Behandlung, die Ihre Lebensqualität nachhaltig verbessert.
+            </p>
         </section>
 
-        <section class="key-benefits-section">
-            <div class="benefit-card">
-                <h3>Spezialisierung</h3>
-                <p>Fokus auf Manuelle Lymphdrainage. Zertifizierte Fachkompetenz für chronische Lymphprobleme[cite: 46].</p>
-            </div>
-            <div class="benefit-card">
-                <h3>Komfort</h3>
-                <p>Keine anstrengenden Anfahrtswege. Wir bringen die Behandlung direkt zu Ihnen nach Hause[cite: 14, 96].</p>
-            </div>
-            <div class="benefit-card">
-                <h3>Zeitersparnis & Flexibilität</h3>
-                <p>Flexible Terminplanung, abgestimmt auf Ihre individuellen Bedürfnisse[cite: 19, 96].</p>
+        <!-- 3. KEY BENEFITS SECTION -->
+        <section class="key-benefits-section py-16">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Benefit Card 1 -->
+                <div class="benefit-card p-6 rounded-xl shadow-md bg-white text-center border-t-4 border-[var(--color-accent)]">
+                    <svg class="w-10 h-10 mx-auto mb-3 text-[var(--color-accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h3 class="text-xl font-bold mb-2 text-[var(--color-accent)]">Spezialisierung</h3>
+                    <p class="text-sm">Fokus auf Manuelle Lymphdrainage. Zertifizierte Fachkompetenz für chronische Lymphprobleme.</p>
+                </div>
+                
+                <!-- Benefit Card 2 -->
+                <div class="benefit-card p-6 rounded-xl shadow-md bg-white text-center border-t-4 border-[var(--color-accent)]">
+                    <svg class="w-10 h-10 mx-auto mb-3 text-[var(--color-accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    <h3 class="text-xl font-bold mb-2 text-[var(--color-accent)]">Komfort Zuhause</h3>
+                    <p class="text-sm">Keine anstrengenden Anfahrtswege. Wir bringen die Behandlung direkt in Ihre vertraute Umgebung.</p>
+                </div>
+
+                <!-- Benefit Card 3 -->
+                <div class="benefit-card p-6 rounded-xl shadow-md bg-white text-center border-t-4 border-[var(--color-accent)]">
+                    <svg class="w-10 h-10 mx-auto mb-3 text-[var(--color-accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h3 class="text-xl font-bold mb-2 text-[var(--color-accent)]">Flexible Planung</h3>
+                    <p class="text-sm">Flexible Terminplanung, abgestimmt auf Ihre individuellen Bedürfnisse und Ihren Tagesablauf.</p>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2025 Mobile Lymphdrainage Freiburg | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+    <!-- FOOTER -->
+    <footer class="text-center py-6 border-t border-[var(--color-text)] mt-12 bg-white/70">
+        <p class="text-sm text-[var(--color-text)]">
+            &copy; 2025 Mobile Lymphdrainage Freiburg | 
+            <a href="impressum.html" class="hover:text-[var(--color-accent)] transition">Impressum</a> | 
+            <a href="datenschutz.html" class="hover:text-[var(--color-accent)] transition">Datenschutz</a>
+        </p>
     </footer>
 
 </body>
